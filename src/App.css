@@ -19,17 +19,17 @@ body{
     align-items: center;
 }
   
- .login-h3{
+ .login-h2{
     font-size:1.5em;
     color:#000000;
-    align-items: center;
+
 }
   
 
   
 .login-input{
     background:#F3F3F3;
-    border: #F3F3F3 1px solid;
+    border: none;
     border-bottom: #F3F3F3 2px solid;
     padding: 8px;
     width:300px;
@@ -37,6 +37,10 @@ body{
     margin-top:10px;
     font-size:1em;
     border-radius:4px;
+}
+
+.login-input:focus{
+    outline: none;
 }
   
 
@@ -50,10 +54,16 @@ body{
     margin-top:30px;
     font-size:1em;
     border-radius:4px;
+    text-transform: uppercase;
 }
 
 .login-btn:hover{
     background:#4D8DC8;
+
+}
+
+.login-btn:focus{
+    outline: none;
 
 }
 
@@ -80,6 +90,53 @@ body{
     background-color: #EBEBEB;
 
 }
+.user-search{
+    background-color: #F3F3F3;
+}
+.user-list{
+    background-color: #FFFFFF;
+    flex: 1;
+}
+.user-settings{
+    background-color: #F3F3F3;
+    display: flex;
+}
+.settings-btn{
+    display: flex;
+    height: 3em;
+    width: 80px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+   }
+   
+.settings-btn> svg{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+.settings-btn:hover > svg{
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+.settings-btn:hover{
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+
+
+
 
 .right-side {
     flex: 4;
@@ -88,4 +145,16 @@ body{
     padding: inherit;
     background-color: white;
 
+}
+
+.user-header{
+    background-color: #F3F3F3;
+}
+
+.message-list{
+    flex: 1;
+    background-color: #FFFFFF;
+}
+.message-input{
+    background-color: #F3F3F3;
 }

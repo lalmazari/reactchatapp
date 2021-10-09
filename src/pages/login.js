@@ -24,17 +24,18 @@ export default function Login(){
     else
         return (
             <div className="login-container">
-                <form id='login-form'
+                <form 
                     onSubmit={(e) => handleSubmit(e)}
                 >
 
-                   <h2>Login to your account</h2>
+                   <h2 className="login-h2">Login to your account</h2>
 
                     <input 
                         className="login-input"
                         name='userName'
                         type="text"
                         placeholder="User Name"
+                        required
 
                     />
                     <input
@@ -42,6 +43,7 @@ export default function Login(){
                         name='firstName'
                         type="text"
                         placeholder="First Name"
+                        required
             
                     />
                     <input
@@ -49,7 +51,7 @@ export default function Login(){
                         name='lastName' 
                         type="text"
                         placeholder="Last Name"
-    
+                        required
                     />
                     <button
                         className="login-btn"

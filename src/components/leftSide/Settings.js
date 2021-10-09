@@ -13,9 +13,12 @@ export default function Settings(){
 
 
     return(
-        <div>
+        <div className='user-settings'>
             <form onSubmit={(e)=> logout(e)}>
-                <button type='submit' className='logout-btn'> Log Out</button>
+                <button type='submit' className='settings-btn'> DarkMode</button>
+            </form>
+            <form onSubmit={(e)=> logout(e)}>
+                <button type='submit' className='settings-btn'> Log Out</button>
             </form>
         </div>
         
