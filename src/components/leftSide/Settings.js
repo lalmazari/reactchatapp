@@ -1,5 +1,13 @@
 import React from "react";
 
+
+import { IoLogOutOutline } from "react-icons/io5";
+import { IoMoon } from "react-icons/io5";
+
+
+
+
+
 export default function Settings(){
 
     const logout = (e) => {
@@ -14,11 +22,11 @@ export default function Settings(){
 
     return(
         <div className='user-settings'>
-            <form onSubmit={(e)=> logout(e)}>
-                <button type='submit' className='settings-btn'> DarkMode</button>
+            <form >
+                <button type='submit' className='settings-btn'><IoMoon /></button>
             </form>
             <form onSubmit={(e)=> logout(e)}>
-                <button type='submit' className='settings-btn'> Log Out</button>
+                <button type='submit' className='settings-btn'><IoLogOutOutline /></button>
             </form>
         </div>
         

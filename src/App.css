@@ -34,14 +34,26 @@ body{
     padding: 8px;
     width:300px;
     color:#515151;
-    margin-top:10px;
+    margin-top:20px;
     font-size:1em;
     border-radius:4px;
 }
 
 .login-input:focus{
     outline: none;
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
 }
+
+
+
+
+
+
+
+
+
+
   
 
 .login-btn{
@@ -57,13 +69,15 @@ body{
     text-transform: uppercase;
 }
 
-.login-btn:hover{
-    background:#4D8DC8;
-
-}
-
 .login-btn:focus{
     outline: none;
+}
+
+.login-btn:hover{
+    background:#4D8DC8;
+    outline: none;
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
 
 }
 
@@ -87,24 +101,80 @@ body{
     display: flex;
     flex-direction: column;
     padding: inherit;
-    background-color: #EBEBEB;
+    background-color: #EBEBEB; 
 
 }
 .user-search{
     background-color: #F3F3F3;
+    margin: auto;
 }
+
+.user-search input{
+    background-color: #F3F3F3;
+    height: 30px;
+    width: 180px;
+    margin: 15px 15px;
+    border: 1px solid #C8C8C8;
+    font-size: large;
+
+}
+.user-search input:focus{
+    outline: none;
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+.send-btn:focus > svg{
+    font-size: 2.2em;
+}
+
+
+
+
+
+
+
 .user-list{
-    background-color: #FFFFFF;
+    background-color: #F3F3F3;
     flex: 1;
+}
+.user-list > ul {
+    padding: 10px 0px 0px 0px;
+    margin: 0px ;
+}
+
+.user-list ul {
+    background-color: #FFFFFF;
+    font-size: smaller;
+    list-style-type: none;
+
+
+}
+.user-list ul li{
+    border-bottom: 1px solid #C8C8C8;
+}
+
+.user-name{
+    margin: 0px;
+    display: flex;
+    font-size: 15px;
+}
+.photo{
+    font-size: 20px;
+}
+.name{
+    padding-left: 15px;
 }
 .user-settings{
     background-color: #F3F3F3;
+    border-top: 1px solid #C8C8C8;
     display: flex;
+    justify-content: right;
+
 }
 .settings-btn{
     display: flex;
     height: 3em;
-    width: 80px;
+    width: 50px;
     margin: 10px;
     align-items: center;
     justify-content: center;
@@ -125,8 +195,7 @@ body{
    }
    
 .settings-btn:hover > svg{
-    font-size: 1.2em;
-    transform: translateX(-5px);
+    font-size: 2.2em;
    }
    
 .settings-btn:hover{
@@ -144,17 +213,163 @@ body{
     flex-direction: column;
     padding: inherit;
     background-color: white;
-
 }
 
 .user-header{
     background-color: #F3F3F3;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+
+
 }
+
+.user-name{
+    margin: 15px 25px;
+}
+.user-btn{
+    margin: 15px 25px;
+    
+
+}
+
+.user-btn{
+    display: flex;
+    height: 2.5em;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+   }
+   
+.user-btn> svg{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+.user-btn:hover > svg{
+    font-size: 2.2em;
+   }
+   
+.user-btn:hover{
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .message-list{
     flex: 1;
     background-color: #FFFFFF;
 }
-.message-input{
-    background-color: #F3F3F3;
+.message-input {
+    border-top: 1px solid #C8C8C8;
+    background-color: #FFFFFF;
+    display: flex;
+    height: 60px;
 }
+.message-input form{
+    display: flex;
+}
+
+.message-input input{
+    background-color: #F3F3F3;
+    width: 650px;
+    margin: 15px 25px;
+    border: 1px solid #C8C8C8;
+    font-size: large;
+
+}
+.message-input input:focus{
+    outline: none;
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+}
+.send-btn:focus > svg{
+    font-size: 2.2em;
+}
+.send-btn{
+    display: flex;
+    height: 2.5em;
+    width: 50px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #F3F3F3;
+   }
+   
+.send-btn> svg{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+.send-btn:hover > svg{
+    font-size: 2.2em;
+   }
+   
+.send-btn:hover{
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+
+   /*
+
+   .message-input form {
+    display: flex;
+    height: 3em;
+    width: 790px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: #fff;
+   }
+   
+.message-input> svg{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+   }
+   
+.message-input form:hover > svg{
+    font-size: 2.2em;
+   }
+   
+.message-input form:hover{
+    box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+    transform: translateY(-2px);
+   }
+*/
